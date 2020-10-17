@@ -25,6 +25,8 @@ public class Shoot : MonoBehaviour
     {
         Vector2 target = GameObject.FindWithTag("EndPoint").GetComponent<Transform>().transform.position - gameObject.transform.position;
         float targetMidPoint = target.y / 2.0f;
+        Debug.Log(target.x);
+        Debug.Log(target.y);
         GameObject bullet = Instantiate(BulletPrefab, transform.position, transform.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(target * BulletSpeed);
@@ -34,7 +36,7 @@ public class Shoot : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && shotFired == false)
+        if (Input.GetMouseButtonDown(0) && !shotFired)
         {
             Vector3 mousePos = Input.mousePosition;
             mousePos.z = 0;
