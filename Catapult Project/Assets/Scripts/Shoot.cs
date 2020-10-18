@@ -27,8 +27,6 @@ public class Shoot : MonoBehaviour
     {
         Vector2 target = GameObject.FindWithTag("EndPoint").GetComponent<Transform>().transform.position - gameObject.transform.position;
         float targetMidPoint = target.y / 2.0f;
-        Debug.Log(target.x);
-        Debug.Log(target.y);
         GameObject bullet = Instantiate(T, transform.position, transform.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(target * BulletSpeed);

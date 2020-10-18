@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3052768948260082492}
   - component: {fileID: 3337827020972439679}
   - component: {fileID: 3337827020972439650}
-  - component: {fileID: 3337827020972439649}
+  - component: {fileID: 6053764428299759270}
   m_Layer: 0
   m_Name: ZombieProto
   m_TagString: Enemy
@@ -178,13 +178,13 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.36191773, y: -0.14805698}
   serializedVersion: 2
-  m_Radius: 2.56
---- !u!58 &3337827020972439649
+  m_Radius: 2.7738607
+--- !u!58 &6053764428299759270
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -197,6 +197,6 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.4935243, y: -0.13160706}
   serializedVersion: 2
-  m_Radius: 0.1
+  m_Radius: 2.0993764

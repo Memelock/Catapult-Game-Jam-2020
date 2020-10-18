@@ -9,7 +9,7 @@ public class Spawner : MonoBehaviour
     public float WaveTimer=20f, o;
     public int level = 1;
     public GameObject S, Necro;
-    public Player p;
+    public Player p => FindObjectOfType<Player>();
 
     // Start is called before the first frame update
     void Start()

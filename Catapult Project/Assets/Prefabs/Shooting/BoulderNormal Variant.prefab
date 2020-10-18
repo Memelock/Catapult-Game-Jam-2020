@@ -15,7 +15,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 1.2
+  m_Radius: 1
 --- !u!1001 &644380699056669247
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33,6 +33,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BoulderNormal Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 2687939713820465904, guid: b3471c33ba765d1488f0c7fb25e9de6d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Boulder
       objectReference: {fileID: 0}
     - target: {fileID: 2687939713820465906, guid: b3471c33ba765d1488f0c7fb25e9de6d,
         type: 3}
@@ -94,9 +99,15 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 5167451059575747942, guid: b3471c33ba765d1488f0c7fb25e9de6d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -4367446768242609292, guid: b3471c33ba765d1488f0c7fb25e9de6d, type: 3}
     - {fileID: -2945490264862860434, guid: b3471c33ba765d1488f0c7fb25e9de6d, type: 3}
+    - {fileID: 5167451059575747942, guid: b3471c33ba765d1488f0c7fb25e9de6d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b3471c33ba765d1488f0c7fb25e9de6d, type: 3}
 --- !u!1 &3295568646852253903 stripped
 GameObject:

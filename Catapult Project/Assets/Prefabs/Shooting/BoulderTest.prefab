@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5167451059575747942}
   m_Layer: 0
   m_Name: BoulderTest
-  m_TagString: Bolder
+  m_TagString: Boulder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
