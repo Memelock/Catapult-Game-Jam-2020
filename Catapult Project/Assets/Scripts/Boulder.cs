@@ -7,13 +7,7 @@ public class Boulder : MonoBehaviour
 {
     public GameObject FOW;
     public GameObject Player;
-    public bool haslanded = false;
-    public Rigidbody2D rb;
-
-    private void Start()
-    {
-        rb = gameObject.GetComponent<Rigidbody2D>();
-    }
+    bool haslanded;
 
     void OnTriggerEnter2D(Collider2D collider)
     {
@@ -21,23 +15,13 @@ public class Boulder : MonoBehaviour
         if (collider.tag == "EndPoint")
         {
             GameObject.Instantiate(FOW, gameObject.transform.position, Quaternion.identity);
-            Destroy(collider.gameObject);
-            //Destroy(gameObject.GetComponent<Rigidbody2D>());
-            rb.velocity = new Vector2(0, 0);
-            GameObject.Find("Catapult").GetComponent<Shoot>().ShotFired = false;
-            haslanded = true;
-
-            StartCoroutine(ExecuteAfterTime(.2f));
+                Destroy(collider.gameObject);
+                Destroy(gameObject.GetComponent<CircleCollider2D>());
+                Destroy(gameObject.GetComponent<Rigidbody2D>());
+                GameObject.Find("Catapult").GetComponent<Shoot>().ShotFired = false;
+            
         }
     }
 
-    IEnumerator ExecuteAfterTime(float time)
-    {
-        yield return new WaitForSeconds(time);
-
-        haslanded = false;
-        Destroy(gameObject.GetComponent<CircleCollider2D>());
-    }
-
-
+    
 }

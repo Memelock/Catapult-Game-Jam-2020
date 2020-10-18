@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -2945490264862860434}
   m_Layer: 0
   m_Name: BoulderTest
-  m_TagString: Boulder
+  m_TagString: Bolder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -119,7 +119,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FOW: {fileID: 7807920819827423495, guid: b4b61914845f0fa48835e5651a9689f0, type: 3}
   Player: {fileID: 7065582201405605304, guid: d9373f974f1ba944da6932e9bcf128e8, type: 3}
-  haslanded: 0
 --- !u!61 &-2945490264862860434
 BoxCollider2D:
   m_ObjectHideFlags: 0
