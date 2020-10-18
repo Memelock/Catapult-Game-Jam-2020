@@ -36,7 +36,7 @@ public class Shoot : MonoBehaviour
 
     void Update()
     {
-        if (p.paused == false) {
+        if (p.paused == false && p.alive) {
             if (Input.GetMouseButtonDown(0) && !shotFired)
             {
                 Vector3 mousePos = Input.mousePosition;

@@ -15,7 +15,7 @@ public class Spawner : MonoBehaviour
     void Start()
     {
         o = WaveTimer;
-        gameObject.transform.position = new Vector2(Random.Range(7f, 50f), Random.Range(7f, 50f));
+        gameObject.transform.position = new Vector2(Random.Range(-50f, 50f), Random.Range(-50f, 50f));
     }
 
     // Update is called once per frame
