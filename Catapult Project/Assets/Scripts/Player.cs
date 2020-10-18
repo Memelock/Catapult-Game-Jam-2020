@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using TMPro;
 public class Player : MonoBehaviour
 {
     public bool paused, alive;
     public int MaxHealth=10, Gold=0, currentHealth;
     public Slider healthbar;
     public GameObject PausedText, Panel;
+    public TMP_Text goldText;
 
     public void Start()
     {
@@ -19,6 +20,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        goldText.text = Gold.ToString();
         Panel.active = !alive;
 
         healthbar.value = currentHealth;

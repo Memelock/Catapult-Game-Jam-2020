@@ -10,7 +10,7 @@ public class Shoot : MonoBehaviour
      * Endpoint: Game object that the bullet is launched towards. Invisible
      */
     public GameObject BulletPrefab,Bullet2;
-    public float BulletSpeed = 25.0f;
+    public float BulletSpeed = 25.0f, rapidShotTimer = 3f;
     public GameObject EndPoint;
     private GameObject T;
     public Player p => FindObjectOfType<Player>();
@@ -26,7 +26,6 @@ public class Shoot : MonoBehaviour
     private void Fire()
     {
         Vector2 target = GameObject.FindWithTag("EndPoint").GetComponent<Transform>().transform.position - gameObject.transform.position;
-        float targetMidPoint = target.y / 2.0f;
         GameObject bullet = Instantiate(T, transform.position, transform.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(target * BulletSpeed);
@@ -36,6 +35,8 @@ public class Shoot : MonoBehaviour
 
     void Update()
     {
+        
+        
         if (p.paused == false && p.alive) {
             if (Input.GetMouseButtonDown(0) && !shotFired)
             {
