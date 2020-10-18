@@ -38,7 +38,7 @@ public class Shoot : MonoBehaviour
         
         
         if (p.paused == false && p.alive) {
-            if (Input.GetMouseButtonDown(0) && !shotFired)
+            if (Input.GetMouseButtonDown(1) && !shotFired && p.Gold >= 1)
             {
                 Vector3 mousePos = Input.mousePosition;
                 mousePos.z = 0;
@@ -47,8 +47,9 @@ public class Shoot : MonoBehaviour
                 Instantiate(EndPoint, worldPos, Quaternion.identity);
                 T = BulletPrefab;
                 Fire();
+                p.Gold -= 1;
             }
-            if (Input.GetMouseButtonDown(1) && !shotFired)
+            if (Input.GetMouseButtonDown(0) && !shotFired)
             {
                 Vector3 mousePos = Input.mousePosition;
                 mousePos.z = 0;

@@ -30,6 +30,8 @@ public class entity : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Player.Gold += 1;
         GameObject.Destroy(gameObject);
+
     }
 }
