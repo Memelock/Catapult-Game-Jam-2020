@@ -12,12 +12,13 @@ GameObject:
   - component: {fileID: 3337827020972439676}
   - component: {fileID: 3337827020972439677}
   - component: {fileID: 3337827020972439678}
+  - component: {fileID: 3052768948260082492}
   - component: {fileID: 3337827020972439679}
   - component: {fileID: 3337827020972439650}
   - component: {fileID: 3337827020972439649}
   m_Layer: 0
   m_Name: ZombieProto
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -130,7 +131,23 @@ MonoBehaviour:
   speed: 50
   nextWaypointDistance: 3
   enemyGFX: {fileID: 0}
+  p: {fileID: 7773754214408642264, guid: ef14f042ed46ccc44abeb56c4cfb130b, type: 3}
   force: {x: 0, y: 0}
+--- !u!114 &3052768948260082492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3337827020972439672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a019fcc1ae816914fbfb0f25127fe290, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 1
+  Attack: 1
+  Gold: 1
 --- !u!50 &3337827020972439679
 Rigidbody2D:
   serializedVersion: 4

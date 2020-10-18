@@ -4,12 +4,23 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-
-    public float movementSpeed =8f;
+    public bool paused;
+    public int Health=10, Gold=0;
 
     void Update()
     {
-        Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0f) * movementSpeed * Time.deltaTime;
-        transform.position += movement;
+        if (Health <= 0) {
+            //GameOver
+        }
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            paused = !paused;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Enemy") {
+            Health -= 1;
+        }
     }
 }

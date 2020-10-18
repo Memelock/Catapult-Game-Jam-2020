@@ -9,9 +9,11 @@ public class Shoot : MonoBehaviour
      * BulletSpeed: How Fast bullet arrives at destination.
      * Endpoint: Game object that the bullet is launched towards. Invisible
      */
-    public GameObject BulletPrefab;
+    public GameObject BulletPrefab,Bullet2;
     public float BulletSpeed = 25.0f;
     public GameObject EndPoint;
+    private GameObject T;
+    public Player p => FindObjectOfType<Player>();
     
     private bool shotFired;
 
@@ -27,7 +29,7 @@ public class Shoot : MonoBehaviour
         float targetMidPoint = target.y / 2.0f;
         Debug.Log(target.x);
         Debug.Log(target.y);
-        GameObject bullet = Instantiate(BulletPrefab, transform.position, transform.rotation);
+        GameObject bullet = Instantiate(T, transform.position, transform.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(target * BulletSpeed);
         
@@ -36,15 +38,27 @@ public class Shoot : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && !shotFired)
-        {
-            Vector3 mousePos = Input.mousePosition;
-            mousePos.z = 0;
-            Vector3 worldPos = Camera.main.ScreenToWorldPoint(mousePos);
-            ShotFired = true;
-            Instantiate(EndPoint, worldPos, Quaternion.identity);
-
-            Fire();
+        if (p.paused == false) {
+            if (Input.GetMouseButtonDown(0) && !shotFired)
+            {
+                Vector3 mousePos = Input.mousePosition;
+                mousePos.z = 0;
+                Vector3 worldPos = Camera.main.ScreenToWorldPoint(mousePos);
+                ShotFired = true;
+                Instantiate(EndPoint, worldPos, Quaternion.identity);
+                T = BulletPrefab;
+                Fire();
+            }
+            if (Input.GetMouseButtonDown(1) && !shotFired)
+            {
+                Vector3 mousePos = Input.mousePosition;
+                mousePos.z = 0;
+                Vector3 worldPos = Camera.main.ScreenToWorldPoint(mousePos);
+                ShotFired = true;
+                Instantiate(EndPoint, worldPos, Quaternion.identity);
+                T = Bullet2;
+                Fire();
+            }
         }
     }
 
