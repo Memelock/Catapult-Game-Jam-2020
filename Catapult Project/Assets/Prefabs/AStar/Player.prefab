@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7773754214408642267}
   - component: {fileID: 7773754214408642264}
   - component: {fileID: 8949452083004010508}
+  - component: {fileID: 2678055137247194333}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -96,8 +97,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paused: 0
-  Health: 10
+  alive: 0
+  MaxHealth: 10
   Gold: 0
+  currentHealth: 0
+  healthbar: {fileID: 0}
+  PausedText: {fileID: 0}
+  Panel: {fileID: 0}
+  wall: {fileID: 0}
+  goldText: {fileID: 0}
+  walls: 0
 --- !u!61 &8949452083004010508
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -124,3 +133,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.12, y: 5.12}
   m_EdgeRadius: 0
+--- !u!95 &2678055137247194333
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7773754214408642269}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: faaee19775f74c8429a895760fbcd8ba, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

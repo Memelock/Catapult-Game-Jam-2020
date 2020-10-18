@@ -39,6 +39,12 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Boulder
       objectReference: {fileID: 0}
+    - target: {fileID: 2687939713820465905, guid: b3471c33ba765d1488f0c7fb25e9de6d,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 968b6882e42d3414b847932a5c6db54a,
+        type: 3}
     - target: {fileID: 2687939713820465906, guid: b3471c33ba765d1488f0c7fb25e9de6d,
         type: 3}
       propertyPath: m_LocalPosition.x

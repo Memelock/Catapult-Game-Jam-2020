@@ -34,8 +34,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -76,60 +78,66 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 84
       Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11622}
+      Script: {instanceID: 11204}
     - Class: 114
-      Script: {instanceID: 11650}
+      Script: {instanceID: 11232}
     - Class: 114
-      Script: {instanceID: 11792}
+      Script: {instanceID: 11374}
     - Class: 114
-      Script: {instanceID: 11974}
+      Script: {instanceID: 11556}
     - Class: 114
-      Script: {instanceID: 11988}
+      Script: {instanceID: 11570}
     - Class: 114
-      Script: {instanceID: 12276}
+      Script: {instanceID: 11602}
     - Class: 114
-      Script: {instanceID: 12686}
+      Script: {instanceID: 11860}
     - Class: 114
-      Script: {instanceID: 12956}
+      Script: {instanceID: 12106}
     - Class: 114
-      Script: {instanceID: 13100}
+      Script: {instanceID: 12272}
     - Class: 114
-      Script: {instanceID: 13434}
+      Script: {instanceID: 12542}
     - Class: 114
-      Script: {instanceID: 13470}
+      Script: {instanceID: 12690}
     - Class: 114
-      Script: {instanceID: 13734}
+      Script: {instanceID: 13024}
     - Class: 114
-      Script: {instanceID: 13810}
+      Script: {instanceID: 13060}
     - Class: 114
-      Script: {instanceID: 14160}
+      Script: {instanceID: 13324}
     - Class: 114
-      Script: {instanceID: 14164}
+      Script: {instanceID: 13400}
     - Class: 114
-      Script: {instanceID: 14278}
+      Script: {instanceID: 13750}
     - Class: 114
-      Script: {instanceID: 14396}
+      Script: {instanceID: 13754}
     - Class: 114
-      Script: {instanceID: 14554}
+      Script: {instanceID: 13868}
     - Class: 114
-      Script: {instanceID: 14952}
+      Script: {instanceID: 13986}
     - Class: 114
-      Script: {instanceID: 14994}
+      Script: {instanceID: 14144}
     - Class: 114
-      Script: {instanceID: 15044}
+      Script: {instanceID: 14544}
     - Class: 114
-      Script: {instanceID: 16216}
+      Script: {instanceID: 14586}
     - Class: 114
-      Script: {instanceID: 24166}
+      Script: {instanceID: 14636}
     - Class: 114
-      Script: {instanceID: 26294}
+      Script: {instanceID: 15480}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -172,29 +180,29 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11622}
+      Script: {instanceID: 11204}
     - Class: 114
-      Script: {instanceID: 11792}
+      Script: {instanceID: 11374}
     - Class: 114
-      Script: {instanceID: 11988}
+      Script: {instanceID: 11570}
     - Class: 114
-      Script: {instanceID: 12686}
+      Script: {instanceID: 12272}
     - Class: 114
-      Script: {instanceID: 12742}
+      Script: {instanceID: 12328}
     - Class: 114
-      Script: {instanceID: 13434}
+      Script: {instanceID: 13024}
     - Class: 114
-      Script: {instanceID: 13810}
+      Script: {instanceID: 13400}
     - Class: 114
-      Script: {instanceID: 13832}
+      Script: {instanceID: 13422}
     - Class: 114
-      Script: {instanceID: 14160}
+      Script: {instanceID: 13750}
     - Class: 114
-      Script: {instanceID: 14278}
+      Script: {instanceID: 13868}
     - Class: 114
-      Script: {instanceID: 14594}
+      Script: {instanceID: 14184}
     - Class: 114
-      Script: {instanceID: 14952}
+      Script: {instanceID: 14544}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -322,6 +330,12 @@ ScriptsOnlyBuild:
     className: TestResultRendererCallback
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Toggle
+  - hash:
+      serializedVersion: 2
       Hash: 896f4ddc5cbd3f6fa8a70c332cddb47a
     assemblyName: Unity.2D.SpriteShape.Runtime.dll
     namespaceName: UnityEngine.U2D
@@ -382,7 +396,7 @@ ScriptsOnlyBuild:
     className: AnimationTrack
   - hash:
       serializedVersion: 2
-      Hash: 433502fe35387430ab414392d27a598b
+      Hash: 39fbf26c8e8926136466edf752d5a6a8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Player
@@ -440,6 +454,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Mask
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Wallmanager
   - hash:
       serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
@@ -932,21 +952,9 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Wallmanager
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Toggle
   platform: 5
   scenePathNames:
   - Assets/Scenes/Intro Scene.unity
   - Assets/Scenes/FogOfWarScene.unity
-  playerPath: C:/Users/USER/Documents/GitHub/GameJamFall2020/Catapult Game Fall 2020/Catapult-Game-Jam-2020/Catapult
+  playerPath: C:/Users/david/OneDrive/Documents/GitHub/Catapult-Game-Jam-2020/Catapult
     Project/Build/Catapult Project.exe

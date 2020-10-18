@@ -25,11 +25,11 @@ public class Shoot : MonoBehaviour
 
     private void Fire()
     {
+        p.A.SetTrigger("Pressed");
         Vector2 target = GameObject.FindWithTag("EndPoint").GetComponent<Transform>().transform.position - gameObject.transform.position;
         GameObject bullet = Instantiate(T, transform.position, transform.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(target * BulletSpeed);
-        
 
     }
 

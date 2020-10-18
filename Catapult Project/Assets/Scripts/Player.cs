@@ -9,8 +9,9 @@ public class Player : MonoBehaviour
     public int MaxHealth=10, Gold=0, currentHealth;
     public Slider healthbar;
     public GameObject PausedText, Panel,wall;
-    public TMP_Text goldText;
-    public int walls;
+    public TMP_Text goldText, ZombieCounter;
+    public Animator A;
+    public int walls,kills;
 
     public void Start()
     {
@@ -21,7 +22,8 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        if(walls >= 1 && Input.GetMouseButtonDown(2))
+        ZombieCounter.text = "Zombies killed " + kills ;
+        if (walls >= 1 && Input.GetMouseButtonDown(2))
         {
             Vector3 mousePos = Input.mousePosition;
             mousePos.z = 0;

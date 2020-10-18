@@ -9,6 +9,7 @@ public class entity : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         Gold = Random.Range(1,5);
     }
 
@@ -26,6 +27,7 @@ public class entity : MonoBehaviour
         if (collision.gameObject.tag == "Boulder" && collision.gameObject.GetComponent<Boulder>().haslanded)
         {
             Health -= 1;
+            Player.kills += 1;
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
