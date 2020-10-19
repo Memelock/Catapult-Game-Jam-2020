@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class entity : MonoBehaviour
 {
-    public int Health,Attack,Gold;
+    public int Health,Attack,Gold, MaxGold;
     public Player Player => FindObjectOfType<Player>();
     // Start is called before the first frame update
     void Start()
     {
         
-        Gold = Random.Range(1,5);
+        Gold = Random.Range(1,MaxGold);
     }
 
     // Update is called once per frame

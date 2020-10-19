@@ -5,12 +5,13 @@ ScriptsOnlyBuild:
     - CameraBehavior
     - EnemyAI
     - MainMenu
+    - Music
     - Player
     - Shoot
     - ShopManager
     - Spawner
     - Toggle
-    - Wallmanager
+    - Trap
     - entity
     AstarPathfindingProject.dll:
     - AstarPath
@@ -80,6 +81,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 84
       Script: {instanceID: 0}
     - Class: 91
@@ -135,7 +140,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14636}
     - Class: 114
-      Script: {instanceID: 15496}
+      Script: {instanceID: 17748}
+    - Class: 114
+      Script: {instanceID: 28066}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -310,7 +317,7 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   - hash:
       serializedVersion: 2
-      Hash: 73d39255ae5d2ab55b470001b93db84d
+      Hash: 4bc71f45091a8c20144a6e2b44f955e4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: entity
@@ -394,7 +401,7 @@ ScriptsOnlyBuild:
     className: AnimationTrack
   - hash:
       serializedVersion: 2
-      Hash: 39fbf26c8e8926136466edf752d5a6a8
+      Hash: 8b598f1d8cbb9fd4629b5046947068d5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Player
@@ -457,7 +464,7 @@ ScriptsOnlyBuild:
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Wallmanager
+    className: Trap
   - hash:
       serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
@@ -950,6 +957,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: abeb85f87a0def4e75267a0279e36465
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Music
   platform: 5
   scenePathNames:
   - Assets/Scenes/Intro Scene.unity

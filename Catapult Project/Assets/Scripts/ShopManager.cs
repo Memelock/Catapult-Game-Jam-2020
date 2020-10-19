@@ -7,11 +7,8 @@ public class ShopManager : MonoBehaviour
 {
     public Player player;
     public TMP_Text t,SafeTextCost,TrapCost, wallcount;
-    private int healthmod = 1, safemod = 5, wallmod = 2;
+    private int healthmod = 1, safemod = 5;
     public GameObject PrimaryCircle, SecondaryCircle;
-
-
-
 
     public void Heal()
     {
@@ -38,13 +35,13 @@ public class ShopManager : MonoBehaviour
 
     }
 
-    public void WallAdder()
+    public void TrapAdder()
     {
 
-        if (player.Gold >= wallmod && !player.paused)
+        if (player.Gold >= 3 && !player.paused)
         {
-            player.Gold -= wallmod;
-            player.walls += 1;
+            player.Gold -= 3;
+            player.traps += 1;
             
         }
 
@@ -62,8 +59,8 @@ public class ShopManager : MonoBehaviour
     {
         t.text = "Heal + " + healthmod;
         SafeTextCost.text = "Expand Light + " + safemod;
-        TrapCost.text = "Add trap + " + wallmod;
-        wallcount.text = player.walls.ToString();
+        TrapCost.text = "Add trap + " + 3;
+        wallcount.text = player.traps.ToString();
 
     }
 }
