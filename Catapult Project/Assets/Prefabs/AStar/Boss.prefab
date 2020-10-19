@@ -129,7 +129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  speed: 50
+  speed: 20
   nextWaypointDistance: 3
   enemyGFX: {fileID: 0}
   force: {x: 0, y: 0}

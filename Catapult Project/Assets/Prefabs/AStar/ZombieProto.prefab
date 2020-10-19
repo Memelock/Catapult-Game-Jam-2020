@@ -148,6 +148,7 @@ MonoBehaviour:
   Health: 1
   Attack: 1
   Gold: 1
+  MaxGold: 3
 --- !u!50 &3337827020972439679
 Rigidbody2D:
   serializedVersion: 4

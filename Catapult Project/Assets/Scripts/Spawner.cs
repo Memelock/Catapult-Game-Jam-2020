@@ -41,13 +41,13 @@ public class Spawner : MonoBehaviour
                 o -= level / 10;
                 WaveTimer = o;
             }
-            if (level % 10 == 0)
+            if (level % 20 == 0)
             {
 
                 Vector2 positions = new Vector2(Random.Range(gameObject.transform.position.x - 20f, gameObject.transform.position.x + 3f), Random.Range(gameObject.transform.position.y - 20f, gameObject.transform.position.y + 3f));
                 GameObject.Instantiate(Necro, positions, Quaternion.identity);
             }
-            if (level % 15 == 0)
+            if (level % 30 == 0)
             {
                 Vector2 positions = new Vector2(Random.Range(gameObject.transform.position.x - 20f, gameObject.transform.position.x + 3f), Random.Range(gameObject.transform.position.y - 20f, gameObject.transform.position.y + 3f));
                 GameObject.Instantiate(S, positions, Quaternion.identity);

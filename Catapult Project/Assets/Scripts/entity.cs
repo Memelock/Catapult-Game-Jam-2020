@@ -18,6 +18,7 @@ public class entity : MonoBehaviour
     {
         if (Health <= 0) {
             Player.Gold += Gold;
+            Player.kills += 1;
             GameObject.Destroy(gameObject);
         }
     }
@@ -27,7 +28,6 @@ public class entity : MonoBehaviour
         if (collision.gameObject.tag == "Boulder" && collision.gameObject.GetComponent<Boulder>().haslanded)
         {
             Health -= 1;
-            Player.kills += 1;
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
